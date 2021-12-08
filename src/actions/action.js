@@ -15,6 +15,11 @@ export const fetchData = () => {
         deaths.unshift(response.data.rawData[i].Deaths);
       }
 
+      const globalConfirmed = response.data.summaryStats.global.confirmed;
+      const globalDeaths = response.data.summaryStats.global.deaths;
+      console.log(globalConfirmed, globalDeaths);
+      const data = [globalConfirmed, globalDeaths];
+
       dispatch({
         type: "SET_COUNTRIES",
         payload: countries,
@@ -24,9 +29,15 @@ export const fetchData = () => {
         type: "SET_CONFIRMED",
         payload: confirmed,
       });
+
       dispatch({
         type: "SET_DEATHS",
         payload: deaths,
+      });
+
+      dispatch({
+        type: "SET_CHART",
+        payload: data,
       });
     } catch (err) {
       console.log("Err", err);

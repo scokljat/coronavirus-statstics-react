@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 body {
   background-color: #f0d290;
   margin: 0;
@@ -8,11 +13,21 @@ body {
   text-align: center;
   color: #781d42;
 }
+.subtitle {
+  font-size: 35px;
+  text-align: center;
+  color: #781d42;
+}
+.doughnut {
+  width: 500px;
+  margin: 0 auto;
+}
 .wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  margin-top: 20px;
 }
 .countries {
   color: #781d42;
