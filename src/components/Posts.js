@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchData } from "./actions/action";
+import { fetchData } from "../actions/action";
 import { Doughnut } from "react-chartjs-2";
 import Chart from "chart.js/auto";
-import rootReducer from "./reducers/rootReducer";
+import rootReducer from "../reducers/rootReducer";
 
 function Posts() {
   const posts = useSelector((state) => state);
