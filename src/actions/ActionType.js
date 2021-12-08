@@ -1,0 +1,4 @@
+export const ActionType = {
+  SET_COUNTRIES: "SET_COUNTRIES",
+  SET_CONFIRMED: "SET_CONFIRMED",
+};
