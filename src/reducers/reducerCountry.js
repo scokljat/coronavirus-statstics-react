@@ -1,4 +1,5 @@
 import { ActionType } from "../actions/ActionType";
+
 const initialState = {
   countries: [],
 };
